@@ -3,7 +3,7 @@ tasks:
     env:
       TF_LOG: DEBUG
     before: |
-      cd $PROJECT_ROOT
+      cd /workspace/AWSDevOpsProjects
       source ./bin/set_tf_alias
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
@@ -13,7 +13,7 @@ tasks:
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
-      cd $PROJECT_ROOT
+      cd /workspace/AWSDevOpsProjects
       source ./bin/set_tf_alias
       source ./bin/install_aws_cli
 vscode:
