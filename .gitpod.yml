@@ -7,7 +7,7 @@ tasks:
       source ./bin/set_tf_alias
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
-  
+      cd /workspace/AWSDevOpsProjects
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
@@ -15,6 +15,7 @@ tasks:
       cd /workspace/AWSDevOpsProjects
       source ./bin/set_tf_alias
       source ./bin/install_aws_cli
+      cd /workspace/AWSDevOpsProjects
 vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
